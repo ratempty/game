@@ -1,0 +1,16 @@
+@charset 'utf-8';
+*{ user-select: none;}
+body{ margin: 0;padding: 0; height:100vh; background:#ededed; }
+span{display:inline-block;}
+.map{ width: 600px; height:600px; border: 1px solid #222; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background:#fff; overflow:hidden; }
+.intro{ width:600px; height:600px; position: absolute; left:0; top:0; z-index: 10000; transition:all .4s;}
+.snakeFrame{ position:absolute; left:0px; top:0; width:240px; height:60px; }
+.snakeFrame span { position:absolute; left:0; top:0; }
+.snakeHead{ background:url('../img/head.png') no-repeat center center;background-size:contain; width:60px; height:60px; z-index: 500;border-radius:30px; }
+.snakeFrame span:not(.snakeHead){ background:rgb(73, 204, 56); width:60px; height:60px; border-radius:25px;}
+.apple{ display:block; width:60px; height:60px; border-radius:15px; background:url('../img/apple.png') no-repeat center center; position:absolute; }
+.wall{ display:block; width:60px; height:60px; background :#222; position:absolute; background:url('../img/block.png') no-repeat center center; }
+.game_start{
+  position:absolute; left:calc(50% - 50px); top:calc(50% + 200px); width:100px; height:50px; border-radius:25px; background:#fff; color:#222; border:none;
+  box-shadow: 3px 3px 0px 3px rgba(0,0,0,.4); font-size:1.2em; text-shadow: 1px 1px 0px rgba(0,0,0,.4);
+}
